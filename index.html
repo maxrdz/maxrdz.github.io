@@ -19,12 +19,21 @@
 
         <meta property='og:site_name' content='maxrdz'>
         <meta property='og:type' content='website'>
-        <meta property='og:updated_time' content='2024-03-20T16:00:00-07:00'/>
+        <meta property='og:updated_time' content='2024-04-18T23:20:00-07:00'/>
     </head>
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+	
+	/* GNOME's Cantarell Font */
+	@font-face {
+	  font-family: 'Cantarell', sans-serif;
+	  font-style: normal;
+	  font-weight: 400;
+	  font-stretch: 100%;
+	  font-display: swap;
+	  src: url(https://maxrdz.com/resources/Cantarell-VF.otf) format('otf');
+	}
 
         ::-moz-selection {
             background-color: transparent;
@@ -51,7 +60,7 @@
         }
         .footer {
             background-color: #0b0f18;
-            font-family: arial;
+            font-family: 'Cantarell', sans-serif;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -72,8 +81,8 @@
             color: white;
             background-color: none;
             text-decoration: none;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
+            font-family: 'Cantarell', sans-serif;
+            font-weight: 700;
             display: flex;
         }
         a p {
@@ -141,7 +150,8 @@
             padding: 1%;
         }
         .author {
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cantarell', sans-serif;
+	    font-weight: 400;
             color: white;
             margin: 0;
             font-size: 170%;
@@ -264,6 +274,11 @@
             .portfolio h2 {
                 font-size: 150%;
             }
+	    .portfolio section h1 {
+		font-family: 'Cantarell', sans-serif;
+		font-weight: 600;
+		font-size: 235%;
+	    }
             .navbar li {
                 margin: 0.5%;
                 margin-right: 0.5%; /* Contact Links Spacing */
@@ -290,97 +305,66 @@
             }
         }
     </style>
-
     <body>
         <div class="top">
-
             <div class="header">
-
                 <div id="title">
-
                     <img src="resources/logo.png" alt="Site Logo" id="author_image">
-                    <h1 class="author">maxrdz</h1>
-
+                    <h1 class="author">Max Rodriguez</h1>
                 </div>
 	    </div>
 	    <div class="navbar">
-
                 <ul id="contact">
-
                     <li>
                         <a href="https://floss.social/@maxrdz">
                             <img src="resources/mastodon.png" alt="Twitter Logo" width="22px" height="22px">
                             <p>&nbsp Mastodon</p>
                         </a>
                     </li>
-
                     <li>
                         <a href="https://www.github.com/maxrdz">
                             <img src="resources/github.png" alt="Github Logo" width="22px" height="22px">
                             <p>&nbsp Github</p>
                         </a>
                     </li>
-
                     <li>
                         <a href="mailto:me@maxrdz.com">
                             <img src="resources/email.png" alt="Email Icon" width="22px" height="22px">
                             <p>&nbsp Email</p>
                         </a>
                     </li>
-
                 </ul>
-
             </div>
-
         </div>
-
         </div>
-
         <div class="impression">
-
             <picture>
-
                 <source srcset="resources/homescreen_MOBILE.jpg" media="(max-width: 700px)">
                 <source srcset="resources/homescreen_TABLET.jpg" media="(max-width: 1550px)">
                 <source srcset="resources/homescreen_DESKTOP.jpg">
                 <img src="resources/homescreen.jpg" alt="Home" width=100% height=auto>
-
             </picture>
-
         </div>
-
         <div class="portfolio">
-
             <section id="about_me">
-
-                <h1 style="font-size: 235%;">About Me</h1>
-
+                <h1>About Me</h1>
                 <h3> 
 		            I've been doing software development as a hobby since 2018 and intend to learn and create  
 		            software for a living in the near future.
                     Since, I have been exploring new technologies such as cloud computing and modern
                     server operating systems such as Windows Server and Linux.
                 </h3>
-
             </section>
-
             <section id="education">
-
-                <h1 style="font-size: 235%;">Education</h1>
-
+                <h1>Education</h1>
                 <h3>
 			I am currently enrolled at Glendale Community College and working towards an
             <br>Associate in Applied Sciences (AAS) in Computer Programming and Systems Analysis degree.
                 </h3>
-
             </section>
-
             <section id="my_skills">
-
                 <h1 style="font-size: 230%;">My Skills</h1>
-
                 <div>
-
                     <ul>
                         <li>Bilingual; Fluent in both English and Spanish</li>
                         <li>Experienced on Object-Oriented Programming</li>
@@ -389,28 +373,19 @@
                         <li>4 years of experience using Git VCS and Github</li>
                         <li>Basic experience with Google Cloud Platform</li>
                     </ul>
-
                 </div>
-
 		<h1 style="font-size: 150%;">Google Cloud Skills</h1>
 		<h2 style="font-size: 120%"><a href="https://www.cloudskillsboost.google/public_profiles/c6ce8515-dd34-4e10-807d-7146a4a141f6">See my Google Cloud Skill Badges</a></h2>
-
             </section>
-
             <section class="my_projects">
-
                 <h1 style="font-size: 300%;">My Portfolio</h1>
-
                 <article>
-
 		    <h1>Donet Network Engine</h1>
-
                     <div class="img_bigger_container_lol">
                         <div class="img_container">
                             <img src="resources/donet-banner.png" width="85%" height="85%">
                         </div>
                     </div>
-
                     <h2>
                         The Donet software project is a free and open-source
                         recreation of Disney's OTP (Online Theme Park) server, which was
@@ -418,134 +393,101 @@
                         massive multiplayer games, such as Toontown Online,
                         Pirates of the Carribean Online, Cars Online, and others.
                     </h2>
-
                     <h2>
                         <a href="https://www.donet-server.org/">
                         Link to Donet website</a>
                     </h2>
-
                 </article>
-
                 <article>
-
                     <h1>Vulkray 3D Game Engine</h1>
-
                     <div class="img_bigger_container_lol">
                         <div class="img_container">
                             <img src="resources/vulkray-banner.png" width="100%" height="100%">
                         </div>
                     </div>
-
                     <h2>
                         In July of 2022, I started to explore computer 3D graphics and learn how
                         traditional 3D graphics worked using hardware acceleration. The 3D engine
                         makes use of the graphics processor using the Vulkan graphics API and GLSL.
                     </h2>
-
                     <h2>
                         <a href="https://github.com/Vulkray/Vulkray">
                         Link to Open Source project</a>
                     </h2>
-
                 </article>
-
                 <article>
-
                     <h1>Poparazzi Private Web API</h1>
-
                     <div class="img_bigger_container_lol">
                         <div class="img_container">
                             <img src="resources/poparazzi.jpg" width="100%" height="100%">
                         </div>
                     </div>
-
                     <h2>
                         In June 2022, I built my first open source API implementation using TypeScript.
                         This project documents and implements the private Web API and streaming API for
                         the Poparazzi social media platform and mobile app.
                     </h2>
-
                     <h2>
                         <a href="https://github.com/maxrdz/poparazzi-private-api">
                         Link to Open Source project</a>
                     </h2>
-
                 </article>
-
                 <article>
-
                     <h1>Garmin Watch App</h1>
-
                     <div class="img_bigger_container_lol">
                         <div class="img_container">
                             <img src="resources/watchface.jpg" width="100%" height="100%">
                         </div>
                     </div>
-
                     <h2>
                         This is a Garmin watchface application I built using the Garmin SDK
                         and the Monkey C language. It's a simple watchface application I made for myself,
                         which currently has around 13,000 downloads.
                     </h2>
-
                     <h2>
                         <a href="https://apps.garmin.com/en-US/apps/ce1f646c-91d3-4119-b89e-e1c2ce3360b5">
                         Link to Garmin Application</a>
                     </h2>
-
                 </article>
-                
                 <article>
-
                     <h1>Twitter Automation</h1>
-
                     <div class="img_bigger_container_lol">
                         <div class="img_container">
                             <img src="resources/Twitter-Bot.jpg" width="100%" height="100%">
                         </div>
                     </div>
-
                     <h2>
                         This is a twitter media bot I developed using Python. This was my first
                         experience using a public Rest API and learnt how to use a Python
                         module to request from an API endpoint and use that information
                         to automatically generate posts and publish media.
                     </h2>
-
                     <h2>
                         <a href="https://www.github.com/maxrdz/Silly-Meter-Twitter">
                         Link to Project Source Code</a>
-                    </h2>
-
+		    </h2>
                 </article>
-
             </section>
-
             <section id="social_links">
-
                 <h1 style="font-size: 240%;">Contact Me</h1>
-
                 <li style="padding-left: 1%;">
                     <a href="https://floss.social/@maxrdz">
                         <img src="resources/mastodon.png" alt="Twitter Logo" width="40px" height="40px">
                         <p>&nbsp Mastodon</p>
                     </a>
                 </li>
-
                 <li>
                     <a href="https://www.github.com/maxrdz">
                         <img src="resources/github.png" alt="Github Logo" width="40px" height="40px">
                         <p>&nbsp Github</p>
                     </a>
                 </li>
-
                 <li>
                     <a href="mailto:me@maxrdz.com">
                         <img src="resources/email.png" alt="Email Icon" width="40px" height="40px">
                         <p>&nbsp Email</p>
                     </a>
                 </li>
-
 		<br><br>
 		<h3>Download my PGP Public Key <a style="display: inline; color: skyblue;" href="./maxrdz.pub.asc">here</a>.</h3>
 		<h3>PGP Key Fingerprint: 22B8 53B2 94E6 5641 BD65 B806 5A36 4831 AE2B 1D4A</h3>
@@ -555,15 +497,11 @@
 		<h2>Matrix: @maxrdz:matrix.org</h2>
 		<h2>Mastodon: <a rel="me" style="display: inline;" href="https://floss.social/@maxrdz">@maxrdz@floss.social</a></h2>
                 <h2>Discord: @maxrdz</h2> <br><br>
-
             </section>
-
         </div>
-
         <div class="footer">
-
             <div class="copyright">
-                Copyright &copy; 2021-2024 maxrdz. All rights reserved.
+                Copyright &copy; 2021-2024 Max Rodriguez. All rights reserved.
             </div>
         </div>
     </body>
