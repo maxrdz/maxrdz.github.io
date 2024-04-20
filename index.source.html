@@ -195,10 +195,11 @@
             font-size: 150%;
         }
         #social_links li {
-            display: inline-block;
+            display: flex;
+	    justify-content: center;
             text-decoration: none;
-            margin: 0.5%;
-            margin-right: 0.5%; /* Contact Links Spacing */
+            margin: 0 auto;
+	    padding: 1%;
         }
         #author_image {
             width: 2.75em;
@@ -291,8 +292,14 @@
             }
             #social_links {
                 margin-top: 0%;
-                margin-bottom: 15%;
+                margin-bottom: 20%;
             }
+	    #social_links li {
+		display: inline-block;
+		width: auto;
+		margin: 0.5%;
+		margin-right: 0.5%;
+	    }
             #social_links p {
                 font-size: 200%;
             }
@@ -499,7 +506,7 @@
 
 		<h2>Matrix: @maxrdz:matrix.org</h2>
 		<h2>Mastodon: <a rel="me" style="display: inline;" href="https://floss.social/@maxrdz">@maxrdz@floss.social</a></h2>
-                <h2>Discord: @maxrdz</h2> <br><br>
+          	<br><br>
             </section>
         </div>
         <div class="footer">
